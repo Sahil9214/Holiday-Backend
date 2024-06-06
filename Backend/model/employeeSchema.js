@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 
 const LeaveSummarySchema = new mongoose.Schema(
   {
-    startLeaveData: { type: String },
-    endLeaveData: { type: String },
-    typeofLeave: { type: String },
+    startLeaveDate: { type: String }, // Changed from startLeaveData to startLeaveDate
+    endLeaveDate: { type: String }, // Changed from endLeaveData to endLeaveDate
+    leaveType: { type: String },
   },
   { _id: false }
 );

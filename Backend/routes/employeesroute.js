@@ -16,7 +16,7 @@ employeeRouter.post("/add", async (req, res, next) => {
     leaveConfirmed,
     newLeaveSummary,
   } = req.body;
-
+  console.log(req.body, "**********************");
   try {
     // Check if all required fields are provided
     if (!name || !role || !email || !password) {
