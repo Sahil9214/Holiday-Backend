@@ -4,6 +4,7 @@ const LeaveSummarySchema = new mongoose.Schema(
   {
     startLeaveData: { type: String },
     endLeaveData: { type: String },
+    typeofLeave: { type: String },
   },
   { _id: false }
 );
